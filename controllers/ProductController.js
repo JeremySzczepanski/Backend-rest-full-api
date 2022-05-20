@@ -132,7 +132,7 @@ module.exports = {
                 })
             }
             const Filename = Product.image.split('/products/')[1];	 //On supprime le fichier lié au produit.
-            fs.unlinSync(`public/images/products/${Filename}`);		
+            fs.unlinkSync(`public/images/products/${Filename}`);		
     
             return res.status(204).json();
         })
