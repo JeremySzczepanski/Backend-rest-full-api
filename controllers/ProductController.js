@@ -117,7 +117,7 @@ module.exports = {
 
     remove: (req, res)=>{
         const id = req.params.id;
-        ProductModele.findByIdAndRemove(id, (err, Product)=>{
+        ProductModel.findByIdAndRemove(id, (err, Product)=>{
             if(err){
                 return res.status(500).json({
                     status: 500,
